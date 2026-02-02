@@ -21,23 +21,20 @@ namespace BankAPI.Controllers
                 return BadRequest(validator.Errors.Select(x => x.ErrorMessage));
             }
 
-            // mapear dados, guardar base de dados
-            // de / para
-
-            var anna = new Client(
+            var client = new Client(
                 createClientDTO.FirstName,
                 createClientDTO.LastName,
-                new DateOnly(1986, 09, 05),
-                "2952225555",
-                "Rua de trás",
-                "3006-097",
-                "Casal",
-                "Portugal",
-                "987456321",
-                "anna@barreto.com"
+                createClientDTO.Birthday,
+                createClientDTO.NIF,
+                createClientDTO.Address,
+                createClientDTO.PostalCode,
+                createClientDTO.City,
+                createClientDTO.Country,
+                createClientDTO.PhoneNumber,
+                createClientDTO.Email
             );
-            
-            return Ok(anna);
+
+            return Ok(client);
         }
     }
 }

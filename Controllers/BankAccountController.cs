@@ -22,6 +22,7 @@ namespace BankAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Post()
         {
+            /*
             List<Client> clients = new List<Client>();
             var anna = new Client(
                 "Anna",
@@ -40,6 +41,8 @@ namespace BankAPI.Controllers
             BankAccount bankAccount = new BankAccount(clients);
 
             return Ok(bankAccount);
+            */
+            return Ok();
         }
     }
 }

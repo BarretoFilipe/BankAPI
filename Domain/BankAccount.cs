@@ -2,6 +2,9 @@
 {
     public class BankAccount
     {
+        protected BankAccount() { }
+
+        /*
         public BankAccount(List<Client> clients)
         {
             BankAccountId = Guid.NewGuid();
@@ -21,5 +24,6 @@
         public List<Client> Clients { get; private set; }
         public List<Transaction> Senders { get; private set; }
         public List<Transaction> Receivers { get; private set; }
+        */
     }
 }

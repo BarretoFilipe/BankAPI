@@ -13,10 +13,10 @@ namespace BankAPI.Application.Validations
             RuleFor(x => x.NIF).NotNull().NotEmpty().Length(9);
             RuleFor(x => x.Address).NotNull().NotEmpty().Length(3, 250);
             RuleFor(x => x.PostalCode).NotNull().NotEmpty().Length(8);
-            RuleFor(x => x.City).NotNull().NotEmpty().Length(150);
-            RuleFor(x => x.Country).NotNull().NotEmpty().Length(100);
+            RuleFor(x => x.City).NotNull().NotEmpty().Length(3, 150);   
+            RuleFor(x => x.Country).NotNull().NotEmpty().Length(3, 100);
             RuleFor(x => x.PhoneNumber).NotNull().NotEmpty().Length(9);
-            RuleFor(x => x.Email).NotNull().NotEmpty().Length(8);
+            RuleFor(x => x.Email).NotNull().NotEmpty().Length(7, 200);
         }
     }
 }
