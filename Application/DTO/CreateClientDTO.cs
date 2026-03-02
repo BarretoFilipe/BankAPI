@@ -1,5 +1,6 @@
 ﻿namespace BankAPI.Application.DTO
 {
+    //DTO - Data Transfer Object
     public class CreateClientDTO
     {
         public string FirstName { get; set; }

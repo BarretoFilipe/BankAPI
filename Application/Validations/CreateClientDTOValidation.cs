@@ -5,6 +5,7 @@ namespace BankAPI.Application.Validations
 {
     public class CreateClientDTOValidation : AbstractValidator<CreateClientDTO>
     {
+        //Fail Fast Validation
         public CreateClientDTOValidation()
         {
             RuleFor(x => x.FirstName).NotNull().NotEmpty().Length(3, 50);
