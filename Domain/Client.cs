@@ -19,17 +19,17 @@
         }
 
         public Guid ClientId { get; private set; }
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-        public DateOnly Birthday { get; private set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateOnly Birthday { get; set; }
         //public Guid BankAccountId { get; private set; }
-        public string NIF { get; private set; }
-        public string Address { get; private set; }
-        public string PostalCode { get; private set; }
-        public string City { get; private set; }
-        public string Country { get; private set; }
-        public string PhoneNumber { get; private set; }
-        public string Email { get; private set; }
+        public string NIF { get; set; }
+        public string Address { get; set; }
+        public string PostalCode { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
         //public BankAccount BankAccount { get; private set; }
     }
 }
